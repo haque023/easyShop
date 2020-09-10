@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_155sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/auth_gradient">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/dummy_image"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:civ_border_color="@color/blackColor"
+        app:civ_border_width="@dimen/_1sdp"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <TextView
+        android:id="@+id/userPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01 XXXX XXXX"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/_14ssp"/>
+
+    <Button
+        android:id="@+id/profileUpdateButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:text="Profile Update"
+        android:textAllCaps="false"
+        android:background="@drawable/transparent_button"
+        android:textColor="@color/whiteColor"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_7sdp" />
+
+</LinearLayout>

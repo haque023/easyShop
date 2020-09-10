@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:show="navigation_view">
+
+    <item
+        android:title="কিভাবে অর্ডার করবেন"
+        android:id="@+id/howToOrderID"
+        />
+
+    <item android:title="সাধারণ জিজ্ঞাসা"
+        android:id="@+id/faqID"
+        />
+
+
+    <item android:title="অর্ডার হিস্টরি"
+        android:id="@+id/orderHistory"
+        />
+
+    <item android:title="সেটিংস"
+        android:id="@+id/settingsItemID"
+        />
+
+    <item android:title="রেটিং দিন"
+        android:id="@+id/ratingItemID"
+        />
+
+    <item android:title="ফেসবুক"
+        android:id="@+id/fbItemID"
+         />
+
+    <item android:title="লগ-আউট"
+        android:id="@+id/logOutItemID"
+        />
+    <item android:title="প্রোডাক্ট আপলোড"
+        android:id="@+id/productUploadID"
+        />
+
+</menu>

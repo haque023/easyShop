@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/auth_gradient"
+    android:layout_height="match_parent"
+    tools:context=".auth.view.SignUpAuth">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_66sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_96sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+   <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Text1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+       android:layout_marginRight="@dimen/_15sdp"
+       android:layout_marginLeft="@dimen/_15sdp"
+        android:gravity="center"
+       android:textColor="@color/whiteColor"
+        android:letterSpacing=".08"
+        android:text="confirm code"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Text2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:gravity="left"
+        android:textStyle="italic"
+        android:textColor="@color/whiteColor"
+        android:text="a confirmation code (otp) has been sent in this +88017********23 number"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text1" />
+
+<LinearLayout
+    android:id="@+id/textauth"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.105"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/Text2"
+   >
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#262626"
+        app:height="@dimen/_40sdp"
+        app:width="@dimen/_40sdp"
+        app:bar_enabled="true"
+        app:bar_height="@dimen/_2sdp"
+        app:length="4"
+        app:otp_text_size="24dp"/>
+
+</LinearLayout>
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+
+        android:background="@drawable/roundedcornerbutton"
+        android:text="CONFIRM"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textauth"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConfirm"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/whiteColor"
+            android:layout_height="wrap_content"
+            android:text="don't get any code yet ?"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/resend"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#404E5E"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="#00FFFFFF"
+
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

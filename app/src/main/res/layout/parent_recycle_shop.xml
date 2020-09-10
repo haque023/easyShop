@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_height="@dimen/_250sdp">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:background="@drawable/text_view_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textTitleCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/blackColor"
+                android:layout_gravity="center"
+                android:text="Demo Content"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/moreCategory"
+                android:layout_width="@dimen/_54sdp"
+                android:text="আরোও"
+                android:textColor="#ffffff"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/_11ssp"
+                android:background="@drawable/transparent_blue"
+                android:layout_height="@dimen/_24sdp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#00FFFFFF"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_20sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_marginVertical="@dimen/_3sdp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/parentViewId"
+            android:background="@drawable/auth_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
